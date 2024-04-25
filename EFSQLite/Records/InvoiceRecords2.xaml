@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFSQLite.InvoiceRecords2"
+             Title="InvoiceRecords2">
+    <ScrollView>
+        <Grid Padding="30">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="215"/>
+                <RowDefinition Height="65"/>
+                <RowDefinition Height="215"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="420" />
+                <ColumnDefinition Width="300" />
+            </Grid.ColumnDefinitions>
+            <ListView x:Name="lst2" 
+ WidthRequest="450"
+ Header="SUPPLIERS"
+HeightRequest="500"
+ HorizontalOptions="Center" 
+ BackgroundColor="#3333CC"
+                      Grid.Column="1"
+                      Grid.Row="0"
+                      Grid.RowSpan="3"
+/>
+
+            <Button
+        WidthRequest="300"
+        HeightRequest="65"
+        Text="detaily"
+            
+            HorizontalOptions="Center"
+        BackgroundColor="LightGreen"
+        TextColor="White" 
+        FontSize="Large"
+        Clicked="Detail"
+              VerticalOptions="Center"
+            Grid.Column="0"
+            Grid.Row="1"/>
+
+            <Button
+WidthRequest="300"
+HeightRequest="65"
+Text="smazat"
+                VerticalOptions="Center"
+            HorizontalOptions="Center"
+BackgroundColor="LightCoral"
+TextColor="White" 
+FontSize="Large"
+Clicked="Delete"
+                Grid.Column="2"
+                Grid.Row="1"/>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

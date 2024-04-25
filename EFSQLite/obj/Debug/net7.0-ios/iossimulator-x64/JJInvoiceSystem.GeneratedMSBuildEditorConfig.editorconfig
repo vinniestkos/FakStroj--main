@@ -1,0 +1,71 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EFSQLite
+build_property.ProjectDir = C:\Users\vitva\Downloads\FakStroj--main\FakStroj--main\EFSQLite\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/vitva/Downloads/FakStroj--main/FakStroj--main/EFSQLite/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EFSQLite.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/vitva/Downloads/FakStroj--main/FakStroj--main/EFSQLite/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EFSQLite.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/vitva/Downloads/FakStroj--main/FakStroj--main/EFSQLite/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EFSQLite.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/vitva/Downloads/FakStroj--main/FakStroj--main/EFSQLite/Records/CustomerRecords.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EFSQLite.Records.CustomerRecords.xaml
+build_metadata.AdditionalFiles.TargetPath = Records\CustomerRecords.xaml
+build_metadata.AdditionalFiles.RelativePath = Records\CustomerRecords.xaml
+
+[C:/Users/vitva/Downloads/FakStroj--main/FakStroj--main/EFSQLite/Records/InvoiceRecords.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EFSQLite.Records.InvoiceRecords.xaml
+build_metadata.AdditionalFiles.TargetPath = Records\InvoiceRecords.xaml
+build_metadata.AdditionalFiles.RelativePath = Records\InvoiceRecords.xaml
+
+[C:/Users/vitva/Downloads/FakStroj--main/FakStroj--main/EFSQLite/Records/InvoiceRecords2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EFSQLite.Records.InvoiceRecords2.xaml
+build_metadata.AdditionalFiles.TargetPath = Records\InvoiceRecords2.xaml
+build_metadata.AdditionalFiles.RelativePath = Records\InvoiceRecords2.xaml
+
+[C:/Users/vitva/Downloads/FakStroj--main/FakStroj--main/EFSQLite/Records/SupplierRecords.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EFSQLite.Records.SupplierRecords.xaml
+build_metadata.AdditionalFiles.TargetPath = Records\SupplierRecords.xaml
+build_metadata.AdditionalFiles.RelativePath = Records\SupplierRecords.xaml
+
+[C:/Users/vitva/Downloads/FakStroj--main/FakStroj--main/EFSQLite/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EFSQLite.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/vitva/Downloads/FakStroj--main/FakStroj--main/EFSQLite/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EFSQLite.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

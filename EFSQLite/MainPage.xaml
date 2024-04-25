@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFSQLite.MainPage">
+
+
+    <ScrollView>
+        <Grid Padding="30" HorizontalOptions="Center"
+              WidthRequest="1150">
+            <!--<Entry x:Name="forName"
+                    Placeholder="Jméno" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   WidthRequest="280"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+
+            <Entry x:Name="forSurname"
+                Placeholder="Adresa" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   WidthRequest="280"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+            <Entry x:Name="forPSC"
+    Placeholder="PSC" 
+       FontSize="Title" 
+       TextColor="Black" 
+       VerticalOptions="Center" 
+       HorizontalOptions="Center"
+       WidthRequest="280"
+       BackgroundColor="White"
+       PlaceholderColor="SlateGrey"/>
+
+            <Button Text="Uložit" HorizontalOptions="Center" Clicked="UlozObjednavku"/>
+
+            <ListView x:Name="lst" 
+                      WidthRequest="250"
+                      Header="objednavky" 
+                      HorizontalOptions="Center" 
+                      BackgroundColor="LightGrey"
+                     />
+
+            <Button Text="Smazat" HorizontalOptions="Center" Clicked="Smazat"/>
+            <Button Text="Detail" HorizontalOptions="Center" x:Name="detailBTN" Clicked="Detajly"/>-->
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="175"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="350" />
+                <ColumnDefinition Width="350" />
+                <ColumnDefinition Width="300" />
+            </Grid.ColumnDefinitions>
+
+
+
+           
+
+          
+
+            <Button Text="Odběratel:"
+       FontSize="Large"
+       BackgroundColor="LightSalmon"
+       TextColor="White"
+       WidthRequest="190"
+       HeightRequest="50"
+       Grid.Row="0"
+       Grid.Column="1"
+       HorizontalOptions="Center"
+                    Clicked="CustomerButton"/>
+
+            <Entry x:Name="forCustomerName"
+                Grid.Row="1" Grid.Column="1"
+                   Placeholder="Jméno" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   WidthRequest="280"
+                   HeightRequest="50"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+            <Entry x:Name="forCustomerAddress"
+                    Grid.Row="2" Grid.Column="1"
+                   Placeholder="Adresa" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   WidthRequest="280"
+                   HeightRequest="50"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+            <Entry x:Name="forCustomerPSC"
+                Grid.Row="3" Grid.Column="1"
+                   Placeholder="PSČ" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   WidthRequest="280"
+                   HeightRequest="50"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+            <Entry x:Name="forCustomerCity"
+                Grid.Row="4" Grid.Column="1"
+                   Placeholder="Město" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   WidthRequest="280"
+                   HeightRequest="50"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+            <Entry x:Name="forCustomerICO"
+                Grid.Row="5" Grid.Column="1"
+                   Placeholder="IČO" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   WidthRequest="280"
+                   HeightRequest="50"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+            <Entry x:Name="forCustomerDIC"
+                Grid.Row="6" Grid.Column="1"
+                   Placeholder="DIČ" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   WidthRequest="280"
+                   HeightRequest="50"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+
+            <Button Text="Dodavatel:"
+                    FontSize="Large"
+                    BackgroundColor="LightSalmon"
+                    TextColor="White"
+                    WidthRequest="190"
+                    HeightRequest="50"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="SupplierButton"/>
+
+            <Entry x:Name="forSupplierName"
+                    Grid.Row="1" Grid.Column="2"
+                   Placeholder="Jméno"
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   WidthRequest="280"
+                   HeightRequest="50"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+            <Entry x:Name="forSupplierAddress"
+                Grid.Row="2" Grid.Column="2"
+                   Placeholder="Adresa" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   WidthRequest="280"
+                   HeightRequest="50"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+            <Entry x:Name="forSupplierPSC"
+                Grid.Row="3" Grid.Column="2"
+                   Placeholder="PSČ" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   WidthRequest="280"
+                   HeightRequest="50"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+            <Entry x:Name="forSupplierCity"
+                Grid.Row="4" Grid.Column="2"
+                   Placeholder="Město" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   WidthRequest="280"
+                   HeightRequest="50"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+            <Entry x:Name="forSupplierICO"
+                Grid.Row="5" Grid.Column="2"
+                   Placeholder="IČO" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   WidthRequest="280"
+                   HeightRequest="50"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"/>
+
+            <Entry x:Name="forSupplierDIC"
+                Grid.Row="6" Grid.Column="2"
+                   Placeholder="DIČ" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   WidthRequest="280"
+                   HeightRequest="50"
+                   BackgroundColor="White"
+                   PlaceholderColor="SlateGrey"
+                   />
+
+            <Label Text="produkt:"
+                   Grid.Row="7"
+                   Grid.Column="0"
+                    HorizontalOptions="Center"
+                   FontSize="Large"
+                   />
+
+            <Label Text="množství:"
+                Grid.Row="7"
+                Grid.Column="1"
+                    HorizontalOptions="End"
+                   FontSize="Large"
+                />
+
+            <Label Text="cena:"
+                 Grid.Row="7"
+                Grid.Column="2"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                />
+
+            <Entry Grid.Row="8" Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   x:Name="forProdukt"
+            Placeholder="produkt"
+            FontSize="Title" 
+            TextColor="Black" 
+            WidthRequest="320"
+            HeightRequest="50"
+            BackgroundColor="White"
+            PlaceholderColor="SlateGrey"
+                   HorizontalOptions="Start"
+            />
+
+            <Entry Grid.Row="8" Grid.Column="1"
+                   x:Name="forQuantity"
+            Placeholder="množství" 
+            FontSize="Title" 
+            TextColor="Black" 
+            WidthRequest="150"
+            HeightRequest="50"
+            BackgroundColor="White"
+            PlaceholderColor="SlateGrey"
+                   HorizontalOptions="End"
+            />
+
+            <Entry Grid.Row="8" Grid.Column="2"
+                   x:Name="forPrice"
+            Placeholder="cena" 
+            FontSize="Title" 
+            TextColor="Black" 
+            WidthRequest="200"
+            HeightRequest="50"
+            BackgroundColor="White"
+            PlaceholderColor="SlateGrey"
+            HorizontalOptions="Center"/>
+
+
+            <Button Grid.Row="9" Grid.Column="1"
+                    WidthRequest="380"
+                    HeightRequest="65"
+                    Text="vytvořit fakturu"
+                    BackgroundColor="MediumPurple"
+                    TextColor="AliceBlue" 
+                    FontSize="Large"
+                    Clicked="UlozObjednavku"
+                    VerticalOptions="Center"/>
+            
+            <Button Grid.Row="9" Grid.Column="2"
+        WidthRequest="380"
+        HeightRequest="65"
+        Text="evidence faktur"
+        BackgroundColor="LightBlue"
+        TextColor="AliceBlue" 
+        FontSize="Large"
+        Clicked="Button_Clicked_1"
+        VerticalOptions="Center"/>
+            
+            
+            
+            <ListView x:Name="lst"
+                      HeightRequest="0"
+                      WidthRequest="0"
+         />
+
+            <ListView x:Name="lst2"
+             HeightRequest="0"
+             WidthRequest="0"
+/>
+
+            <ListView x:Name="lst3"
+             HeightRequest="0"
+             WidthRequest="0"
+/>
+
+        </Grid>
+    </ScrollView>
+
+
+</ContentPage>

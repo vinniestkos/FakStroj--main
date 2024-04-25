@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFSQLite.Records.SupplierRecords"
+             Title="SupplierRecords">
+    <ScrollView>
+        <Grid Padding="30" BackgroundColor="CornflowerBlue"
+              WidthRequest="800"
+              HeightRequest="500">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+
+
+            <Label 
+                FontFamily="Arial"
+                FontSize="Large"
+                TextColor="Black"
+                Text="FAKTURA dodavatele"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"/>
+
+            <Label 
+        FontSize="30"
+        Text="{Binding Id}"
+        VerticalOptions="Center" 
+        HorizontalOptions="Start"
+                Grid.Row="1"
+                      FontFamily="Arial"/>
+
+            <Label 
+        FontSize="30"
+        Text="{Binding Name}"
+        VerticalOptions="Center" 
+        HorizontalOptions="Start"
+            Grid.Row="2"
+                FontFamily="Arial"/>
+
+
+            <Label 
+        FontSize="30"
+        Text="{Binding Address}"
+        VerticalOptions="Center" 
+        HorizontalOptions="Start"
+            Grid.Row="3"
+                FontFamily="Arial"/>
+
+            <Label 
+        FontSize="30"
+        Text="{Binding City}"
+        VerticalOptions="Center" 
+        HorizontalOptions="Start"
+            Grid.Row="4"
+            FontFamily="Arial"/>
+
+            <Label 
+        FontSize="30"
+        Text="{Binding PSC}"
+        VerticalOptions="Center" 
+        HorizontalOptions="Start"
+            Grid.Row="5"
+            FontFamily="Arial"/>
+
+            <Label 
+        FontSize="30"
+        Text="{Binding ICO}"
+        VerticalOptions="Center" 
+        HorizontalOptions="Start"
+            Grid.Row="6"
+            FontFamily="Arial"/>
+
+            <Label 
+        FontSize="30"
+        Text="{Binding DIC}"
+        VerticalOptions="Center" 
+        HorizontalOptions="Start"
+            Grid.Row="7"
+            FontFamily="Arial"/>
+
+            <Label 
+FontSize="30"
+Text="{Binding Product}"
+VerticalOptions="Center" 
+HorizontalOptions="Start"
+            Grid.Row="8"
+            FontFamily="Arial"/>
+
+            <Label 
+FontSize="30"
+Text="{Binding Quantity}"
+VerticalOptions="Center" 
+HorizontalOptions="Start"
+            Grid.Row="9"
+            FontFamily="Arial"/>
+
+            <Label 
+FontSize="30"
+Text="{Binding Price}"
+VerticalOptions="Center" 
+HorizontalOptions="Start" 
+            Grid.Row="10"
+            FontFamily="Arial"/>
+
+            <Button
+                WidthRequest="250"
+                HeightRequest="65"
+                Text="export do PDF"
+                BackgroundColor="LightPink"
+                Grid.Row="11"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontSize="30"
+                TextColor="Black"
+                />
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
